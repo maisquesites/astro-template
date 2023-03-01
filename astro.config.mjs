@@ -7,9 +7,16 @@ import tailwind from "@astrojs/tailwind";
 import image from "@astrojs/image";
 
 // https://astro.build/config
+import sitemap from "@astrojs/sitemap";
+
+// https://astro.build/config
 export default defineConfig({
+  site: "https://maisquesites.com",
   integrations: [
     tailwind(),
-    image({ serviceEntryPoint: "@astrojs/image/sharp" }),
+    image({
+      serviceEntryPoint: "@astrojs/image/sharp",
+    }),
+    sitemap(),
   ],
 });
