@@ -1,8 +1,16 @@
 ---
 import Title from "@/components/title.astro";
 import Layout from "@/layouts/layout.astro";
+import { Image } from "@astrojs/image/components";
 ---
 
 <Layout>
+  <Image
+    src="https://astro.build/assets/press/logomark-light.svg"
+    alt="Astro"
+    width={65}
+    height={65}
+    format="webp"
+  />
   <Title content="Hello World" />
 </Layout>
